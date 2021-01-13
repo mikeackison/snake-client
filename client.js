@@ -22,16 +22,12 @@ const connect = function() {
     conn.write(name);
 
     // conn.write("Move: up")
-    
+
     // setInterval(function () {
     //   conn.write("Move: up")
-    // }, 1000);
-    
-    
+    // }, 1000); 
     
 });
-
-
 
   // Update the connect function to also attach an event handler
   // to handle incoming data and console log it for the player
