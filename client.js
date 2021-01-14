@@ -1,4 +1,5 @@
 const net = require('net');
+const { IP, PORT } = require('./constants')
 
 const name = "Name: MCA"
 // Establish connection with game server
@@ -6,8 +7,8 @@ const name = "Name: MCA"
 
 const connect = function() {
   const conn = net.createConnection({
-    host: '135.23.222.131',
-    port: 50542
+    host: IP,
+    port: PORT
 
   });
   // this iterperets incoming data as text
