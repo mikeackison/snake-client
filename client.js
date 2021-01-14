@@ -18,14 +18,9 @@ const connect = function() {
   // use the event handler
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
-    // write name 
+    
     conn.write(name);
 
-    // conn.write("Move: up")
-
-    // setInterval(function () {
-    //   conn.write("Move: up")
-    // }, 1000); 
     
 });
 
@@ -44,17 +39,6 @@ const connect = function() {
 };
 
 
-
-
-
 // in curley braces, because the opject on play is in curly braces,
 // if we remove on both it will stil run at this level
 module.exports = { connect };
-
-
-
-
-// "Move: up" - move up one square (unless facing down)
-// "Move: down" - move down one square (unless facing up)
-// "Move: left" - move left one square (unless facing right)
-// "Move: right" - move left one square (unless facing left)
