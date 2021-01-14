@@ -1,11 +1,8 @@
 // setup user interface
 // specifically so that we can handle user input via stdin
 
-// const { createConnection } = require("net");
-// const { connect } = require("./client");
-
-
 let connection;
+
 const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
@@ -34,5 +31,4 @@ const setupInput = function(conn) {
   return stdin;
 };
 
-// module.exports = { handleUserInput };
 module.exports = { setupInput };
