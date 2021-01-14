@@ -25,7 +25,12 @@ const setupInput = function(conn) {
 
     } else if (key === 'd') {
       connection.write('Move: right');
+    } else if (key === 'f') {
+      connection.write("Say: LOOK OUT!")
+
     }
+
+
   })
   // then return
   return stdin;
